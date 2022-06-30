@@ -13,6 +13,12 @@ const message = document.getElementById("bmi-text");
 
 
 function calculateBMI(){
+    let height, weight, bmi;
+    height = Number(heightInput.value);
+    weight = Number(weightInput.value);
+    bmi = weight / (height * 0.0254 * height * 0.0254);
+    result.textContent = bmi;
+    
 
 }
 
